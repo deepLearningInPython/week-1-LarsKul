@@ -56,7 +56,5 @@ def ReLu(in_ar, cutoff = 0):
 def neural_net_layer(mat_in, vec_in, cutoff):
     tmp = np.matmul(mat_in, vec_in)
     mat_out = ReLu(tmp, cutoff=cutoff)
-    return(mat_out)
-
-
+    return mat_out
 # ------------------------------------------
