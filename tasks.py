@@ -36,8 +36,8 @@ def step(num):
 # -----------------------------------------------
 def ReLu(in_ar, cutoff = 0):
     small = in_ar < cutoff
-    out_ar = in_ar[small] = cutoff
-    return(out_ar)
+    in_ar[small] = cutoff
+    return(in_ar)
 
 
 # -----------------------------------------------
